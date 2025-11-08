@@ -1,4 +1,6 @@
-function isDirector(employee: Director | TeacherClass): employee is Director {
+export function isDirector(
+  employee: Director | TeacherClass
+): employee is Director {
   return employee instanceof Director;
 }
 function executeWork(employee: Director | TeacherClass): string {
